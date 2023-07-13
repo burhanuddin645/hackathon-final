@@ -1,0 +1,239 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+    
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .btn-login,
+  .btn-signup {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      margin-top: 10px;
+    }
+  
+    .btn-login,
+    .btn-signup {
+      margin-top: 10px;
+    }
+  }
+  .home-page{
+    width: 100%;
+    height: 90vh; 
+       background-image:  url(imgs/Top-10-Trendy-Furniture-Design-in-2020.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+  }
+  .extra{
+    background-color: peachpuff;
+    background-size: cover;
+  }
+
+  .extra button{
+        padding: 20px;
+        background: #e74c3c;
+        color: #ffff;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        font-size: 20px;
+        margin-top: 30px;
+    
+  }
+
+  .extra h1{
+    color: gold;
+  }
+.column .card img{
+    height: 600px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+.idk{
+    background-image: url(imgs/Organic-modern-bedroom-House-and-Hold.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 100px;
+    height: 800px;
+}
+
+.idk a{
+   text-decoration: none;
+   background: #e74c3c;
+   padding: 10px 20px;
+   margin-bottom: 10px;
+   color: white;
+   border-radius: 5px
+}
+
+footer{
+    width: 100%;
+    background: #262626;
+padding: 50px 100px;
+}
+
+.newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #ffff;
+}
+
+.newsletter >div{
+    flex-basis: 50%;
+}
+.ntext{
+    text-align: right;
+}
+
+.newsletter h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+}
+
+.newsletter p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.newsletter label{
+    position: relative;
+
+}
+.newsletter input{
+    padding: 20px;
+    width: 70%;
+    border-radius: 8px ;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.newsletter button{
+position: absolute;
+right: 0;
+padding: 20px;
+width: 30%;
+background: #e74c3c;
+color: #ffff;
+border: none;
+outline: none;
+border-radius: 0 8px 8px 0;
+}
+
+.f-contact{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    border-bottom:1px solid rgba( 255,255,255,0.2) ;
+}
+
+.f-contact>div{
+flex-basis:20%;}
+
+.f-contact p{
+    line-height: 2em;
+    font-size: 20px;
+    color: grey;
+}
+
+.f-contact p:hover{
+    color: white;
+}
+
+.f-contact i{
+    color: black;
+    background: white;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 5px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.f-contact i:hover{
+    background: transparent;
+    color: #ffff;
+    border: 1px solid white;
+}
